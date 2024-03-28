@@ -1,0 +1,60 @@
+object Form1: TForm1
+  Left = 700
+  Height = 489
+  Top = 147
+  Width = 739
+  Caption = 'Form1'
+  ClientHeight = 489
+  ClientWidth = 739
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 54
+    Top = 48
+    Width = 723
+    Caption = 'Угадайте, кто сделал этот проект?'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -40
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Button1: TButton
+    Left = 304
+    Height = 208
+    Top = 128
+    Width = 94
+    Caption = 'кто?'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clFuchsia
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label2: TLabel
+    Left = 161
+    Height = 1
+    Top = 325
+    Width = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 624
+    Height = 38
+    Top = 432
+    Width = 94
+    Caption = 'выйти('
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+end
